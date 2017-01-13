@@ -12,6 +12,7 @@ _This is a set of one or more html pages inviting the user to take an online qui
 
 * _clone this repository_
 * _open trackquiz/index.html in a web browser_
+* _this can also be found at https://ccbpeden.github.io/trackquiz/_
 
 ## Known Bugs
 
