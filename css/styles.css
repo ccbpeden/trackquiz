@@ -10,6 +10,11 @@ p{
   font-family: "Zapfino", Garamond;
 }
 
+img{
+  float: left;
+  height: 35px;
+}
+
 .jumbotron{
   background-color: white;
 }
