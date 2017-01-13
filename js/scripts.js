@@ -1,12 +1,16 @@
 //Back End
+var username;
+
 var s1Output = function(username){
   return "What a fantastic name," + username + ", let's keep going!"
 };
 
-var s1outputa;
-
 var setcolor = function(favoriteColor){
   document.body.style.backgroundColor = favoriteColor;
+};
+
+var s2Output= function(username){
+  return "Well there's no accounting for taste," + username +", but let us continue."
 };
 
 var tendency;
@@ -15,8 +19,8 @@ var tendency;
 $(document).ready(function(){
   $("form#section1").submit(function(event){
     event.preventDefault();
-    var username = ($("#username").val());
-    s1Outputa = s1Output(username);
+    username = ($("#username").val());
+    var s1Outputa = s1Output(username);
     $("#section1").hide();
     $(".s1Outputa").text(s1Outputa);
     $("#section2").show();
@@ -26,7 +30,9 @@ $(document).ready(function(){
     event.preventDefault();
     var favoriteColor = ($("#color").val());
     $(setcolor(favoriteColor));
+    var s2Outputa = s2Output(username);
     $("#section2").hide();
+    $(".s2Outputa").text(s2Outputa);
     $("#section3").show();
   });
   $("form#section3").submit(function(event){
@@ -36,6 +42,7 @@ $(document).ready(function(){
     tendency = radio1;
     alert("tendency set to" + tendency);
     $("#section3").hide();
+    $(".s3Outputa").text(username);    
     $("#section4").show();
   });
   $("form#section4").submit(function(event){
