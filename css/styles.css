@@ -1,3 +1,23 @@
+body{
+  font-family: "Showtime";
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  font-family: "Zapfino", Garamond;
+}
+
+.jumbotron{
+  background-color: white;
+}
+
 .subsequent {
   display: none;
+  margin: 12px;
+  border: 1px solid black;
+  padding: 15px;
+  background-color: white;
 }
